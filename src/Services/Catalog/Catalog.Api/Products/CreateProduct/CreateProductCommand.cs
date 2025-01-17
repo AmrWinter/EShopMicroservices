@@ -8,7 +8,7 @@ public record class CreateProductCommandResponse(Guid Id);
 
 internal class CreateProductCommandHandler: ICommandHandler<CreateProductCommand, CreateProductCommandResponse>
 {
-    public async Task<CreateProductCommandResponse> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+    public async Task<CreateProductCommandResponse> Handle(CreateProductCommand command, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }
